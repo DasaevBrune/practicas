@@ -8,11 +8,10 @@ public class Factorial {
         System.out.println("Ingrese número: ");
         int num = scanner.nextInt();
 
-        long resultado = calFactorial(num);
-        System.out.println(resultado);
+        long result = calFactorial(num);
+        System.out.println(" = " + result);
 
     }
-
     public static long calFactorial(int n){
         if (n < 0){
             return -1;
@@ -20,7 +19,7 @@ public class Factorial {
         long factorial = 1;
         for (int i = 1; i <= n; i++) {
             factorial *= i;
-            System.out.print(i + " ");
+            System.out.print(i + " * ");
         }
 
         return factorial;
